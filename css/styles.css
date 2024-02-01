@@ -1,0 +1,67 @@
+.cabecera{
+    padding: 0;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style: solid;
+    border-color: white;
+}
+
+body{
+    background-color: darkslategray;
+    font-family: 'Fredericka', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.titulo{
+    font-family: 'Fredericka', sans-serif;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.lista{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cuadrito{
+    padding-right: 4px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.submenu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subsubmenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+
+/*fuente Fredericka The Great*/
+@font-face {
+    font-family: 'Fredericka';
+    src: url(/font/FrederickatheGreat-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

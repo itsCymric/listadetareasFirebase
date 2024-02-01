@@ -1,0 +1,51 @@
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.inModal{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.inModal input{
+    border-radius: 5px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.btnSub{
+    background-color: white;
+    outline: none;
+    margin-left: 4px;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+}
+
+.btnSub:hover{
+    cursor:pointer;
+}

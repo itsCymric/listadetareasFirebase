@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+</head>
+<body>
+    <header class="cabecera">
+        <p class="titulo">Cosas por hacer</p>
+    </header>
+    <div class="submenu">
+        <div class="subsubmenu">
+            <h5>Agregar tarea nueva</h5>
+            <button class="btnSub" id="btnModal">
+                <img src="icons/pencil-square.svg">
+            </button>
+        </div>
+        <div class="subsubmenu">
+            <h5>Eliminar completadas</h5>
+            <button class="btnSub" id="btnEliminar">
+                <img src="icons/trash-fill.svg">
+            </button>
+        </div>
+        
+    </div>
+    <div class="modal" id="cristianModal" >
+        <div class="inModal">
+            <p>Agregar tarea nueva</p>
+            <span class="cerrar" id="btnCerrar" onclick="cerrarModal()">&times;</span>
+            <input type="text" name="inputModal" id="txtTarea">
+            <button class="btnSave" id="btnGuardar">
+                <img src="icons/floppy.svg">
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="lista" id="lista-datos">
+        
+    </div>
+
+    <!-- Firebase JavaScript SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore-compat.js"></script>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/modal.js"></script>
+</body>
+</html>
+
+<!--<div class="tarea">
+            <svg class="icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H384zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>
+            <p>Tarea 3</p>
+        </div>-->
